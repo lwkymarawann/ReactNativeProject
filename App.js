@@ -9,6 +9,7 @@ import { styles, pickerSelectStyles } from "./components/styles";
 import SocialCard from './components/SocialCard';
 import RNPickerSelect from "react-native-picker-select";
 
+
 export default function App() {
 
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -21,7 +22,6 @@ export default function App() {
     const [proteinBreakdown, setProteinBreakdown] = useState([]);
     const [isProteinCalculated, setIsProteinCalculated] = useState(false);
     const [currentPage, setCurrentPage] = useState("home");
-
 
 
     const foodDatabase = [
@@ -160,7 +160,7 @@ export default function App() {
                                             <TextInput
                                                 style={styles.input}
                                                 keyboardType="numeric"
-                                                placeholder="Enter number of pieces"
+                                                placeholder="Number of pieces (given weight: 100g/peice)"
                                                 value={pieces}
                                                 onChangeText={setPieces}
                                             />
